@@ -1,0 +1,43 @@
+{
+    "name": "apache02/products-catalog",
+    "description": "Products Catalog",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Aleksey Priymachuk",
+            "email": "gxad02@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "yiisoft/yii2": "^2.0",
+        "yiisoft/yii2-gii": "^2.2",
+        "yiisoft/yii2-debug": "^2.1"
+    },
+    "autoload": {
+        "files": [
+            "vendor/yiisoft/yii2/Yii.php"
+        ],
+        "psr-4": {
+            "common\\": "common",
+            "console\\": "console",
+            "frontend\\": "frontend"
+        }
+    },
+    "config": {
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}

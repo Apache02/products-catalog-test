@@ -1,0 +1,6 @@
+/**/app/vendor
+/**/web/assets/*
+/**/node_modules/*
+/.idea
+/.git
+/README.md
