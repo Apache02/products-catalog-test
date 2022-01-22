@@ -3,6 +3,13 @@
  * @var \yii\web\View $this
  * @var string $content
  */
+
+use yii\bootstrap4\BootstrapAsset;
+use yii\web\YiiAsset;
+
+YiiAsset::register($this);
+BootstrapAsset::register($this);
+
 ?>
 <?php $this->beginPage() ?>
 <!doctype html>

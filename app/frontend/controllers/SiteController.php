@@ -2,7 +2,9 @@
 
 namespace frontend\controllers;
 
+use common\models\Product;
 use frontend\components\Controller;
+use yii\data\ActiveDataProvider;
 use yii\web\ErrorAction;
 
 class SiteController extends Controller
@@ -19,6 +21,14 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+        $query = Product::find();
+
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+
+        return $this->render('index', [
+            'dataProvider' => $dataProvider,
+        ]);
     }
 }

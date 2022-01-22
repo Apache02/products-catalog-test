@@ -18,6 +18,7 @@ return [
             'class' => \yii\db\Connection::class,
             'dsn' => $params['dbDsn'],
             'charset' => 'utf8',
+            'enableSchemaCache' => true,
         ],
     ],
     'params' => $params,
