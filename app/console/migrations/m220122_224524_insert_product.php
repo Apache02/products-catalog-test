@@ -133,7 +133,7 @@ class m220122_224524_insert_product extends Migration
 
         for ($i = 0; $i < self::COUNT; $i++) {
             $price1 = rand(99, 1000000) / 10000;
-            $price2 = $price1 * (1 + (rand(1,40)/100));
+            $price2 = $price1 * (1 + (rand(1, 40) / 100));
             $currency_id = $currencyIds[array_rand($currencyIds)];
             $name = self::FAKE_NAMES[array_rand(self::FAKE_NAMES)];
 
